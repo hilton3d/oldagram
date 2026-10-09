@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post {
+  width: 100%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  border: 7px solid black;
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 0.75px solid gray;
+}
+
+.logo {
+  width: 120px;
+}
+
+.per {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.post-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.author-details {
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 8px;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.full-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 13px;
+}
+
+.van-gogh {
+  width: 100%;
+  max-width: 415px;
+}
+
+.post-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 27px;
+  font-size: 14px;
+}
+
+.icon-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 454px) {
+  .full-name {
+    font-size: 13px;
+  }
+
+  .location {
+    font-size: 12px;
+  }
+
+  .post-bottom {
+  font-size: 13px;
+}
+}
